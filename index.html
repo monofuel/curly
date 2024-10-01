@@ -164,13 +164,13 @@
             body: openArray[char] = &quot;&quot;.toOpenArray(0, -1); timeout = 60): Response">makeRequest(curl: Curly; verb: sink string; url: sink string;
             headers: sink HttpHeaders = emptyHttpHeaders();
             body: openArray[char] = &quot;&quot;.toOpenArray(0, -1); timeout = 60): Response</a></li>
-<li><a class="reference" href="#makeRequest%2CPCurl%2Cstring%2Cstring%2CopenArray%5Bchar%5D%2Cfloat32" title="makeRequest(curl: PCurl; verb: string; url: string;
+<li><a class="reference" href="#makeRequest%2CPCurl%2Cstring%2Cstring%2CopenArray%5Bchar%5D%2Cfloat32%2CCallbackFn" title="makeRequest(curl: PCurl; verb: string; url: string;
             headers = emptyHttpHeaders();
             body: openArray[char] = &quot;&quot;.toOpenArray(0, -1);
-            timeout: float32 = 60.0): Response">makeRequest(curl: PCurl; verb: string; url: string;
+            timeout: float32 = 60.0; callback: CallbackFn = nil): Response">makeRequest(curl: PCurl; verb: string; url: string;
             headers = emptyHttpHeaders();
             body: openArray[char] = &quot;&quot;.toOpenArray(0, -1);
-            timeout: float32 = 60.0): Response</a></li>
+            timeout: float32 = 60.0; callback: CallbackFn = nil): Response</a></li>
 
 </ul>
 <ul class="simple nested-toc-section">makeRequests
@@ -318,8 +318,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L764" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L764" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L779" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L779" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -328,8 +328,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L116" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L116" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L118" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L118" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -338,8 +338,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L103" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L103" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L105" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L105" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -404,8 +404,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L593" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L593" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L608" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L608" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -420,8 +420,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L596" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L596" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L611" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L611" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -434,8 +434,8 @@
   <dd>
     
     Removes a libcurl handle from the pool. This call blocks until it can take a handle. Remember to add the handle back to the pool with recycle when you're finished with it.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L775" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L775" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L790" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L790" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -447,8 +447,8 @@
   <dd>
     
     Clears the request queue, unblocking any threads waiting on responses. All queued requests are completed with an error.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L415" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L415" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L430" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L430" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -460,8 +460,8 @@
   <dd>
     
     Blocks until all in-flight and queued requests complete, then closes all libcurl handles and deallocates the Curly object.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L378" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L378" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L393" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L393" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -470,8 +470,8 @@
   <dd>
     
     Closes the libcurl handles then deallocates the pool. All libcurl handles should be returned to the pool before it is closed.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L766" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L766" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L781" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L781" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -485,8 +485,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L647" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L647" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L662" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L662" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -497,8 +497,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L506" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L506" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L521" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L521" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -509,8 +509,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L975" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L975" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L995" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L995" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -521,8 +521,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L1030" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L1030" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L1050" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L1050" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -536,8 +536,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L612" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L612" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L627" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L627" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -548,8 +548,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L471" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L471" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L486" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L486" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -560,8 +560,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L940" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L940" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L960" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L960" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -572,8 +572,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L991" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L991" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L1011" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L1011" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -585,8 +585,8 @@
   <dd>
     
     Returns true if there are requests in-flight or queued.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L399" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L399" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L414" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L414" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -600,8 +600,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L655" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L655" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L670" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L670" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -612,8 +612,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L514" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L514" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L529" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L529" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -624,8 +624,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L983" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L983" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L1003" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L1003" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -636,8 +636,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L1039" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L1039" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L1059" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L1059" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -649,8 +649,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L590" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L590" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L605" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L605" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -665,22 +665,22 @@
   <dd>
     
     Makes the HTTP request and blocks until the response is received. If a response cannot be received (due to timeout, DNS failure, broken connection, etc), an exception is raised.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L427" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L427" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L442" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L442" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
-<div id="makeRequest,PCurl,string,string,openArray[char],float32">
-  <dt><pre><span class="Keyword">proc</span> <a href="#makeRequest%2CPCurl%2Cstring%2Cstring%2CopenArray%5Bchar%5D%2Cfloat32"><span class="Identifier">makeRequest</span></a><span class="Other">(</span><span class="Identifier">curl</span><span class="Other">:</span> <span class="Identifier">PCurl</span><span class="Other">;</span> <span class="Identifier">verb</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">url</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+<div id="makeRequest,PCurl,string,string,openArray[char],float32,CallbackFn">
+  <dt><pre><span class="Keyword">proc</span> <a href="#makeRequest%2CPCurl%2Cstring%2Cstring%2CopenArray%5Bchar%5D%2Cfloat32%2CCallbackFn"><span class="Identifier">makeRequest</span></a><span class="Other">(</span><span class="Identifier">curl</span><span class="Other">:</span> <span class="Identifier">PCurl</span><span class="Other">;</span> <span class="Identifier">verb</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">url</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
                  <span class="Identifier">headers</span> <span class="Other">=</span> <span class="Identifier">emptyHttpHeaders</span><span class="Other">(</span><span class="Other">)</span><span class="Other">;</span>
                  <span class="Identifier">body</span><span class="Other">:</span> <span class="Identifier">openArray</span><span class="Other">[</span><span class="Identifier">char</span><span class="Other">]</span> <span class="Other">=</span> <span class="StringLit">&quot;&quot;</span><span class="Other">.</span><span class="Identifier">toOpenArray</span><span class="Other">(</span><span class="DecNumber">0</span><span class="Other">,</span> <span class="DecNumber">-1</span><span class="Other">)</span><span class="Other">;</span>
-                 <span class="Identifier">timeout</span><span class="Other">:</span> <span class="Identifier">float32</span> <span class="Other">=</span> <span class="FloatNumber">60.0</span><span class="Other">)</span><span class="Other">:</span> <a href="curly.html#Response"><span class="Identifier">Response</span></a> {.
+                 <span class="Identifier">timeout</span><span class="Other">:</span> <span class="Identifier">float32</span> <span class="Other">=</span> <span class="FloatNumber">60.0</span><span class="Other">;</span> <span class="Identifier">callback</span><span class="Other">:</span> <span class="Identifier">CallbackFn</span> <span class="Other">=</span> <span class="Keyword">nil</span><span class="Other">)</span><span class="Other">:</span> <a href="curly.html#Response"><span class="Identifier">Response</span></a> {.
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ZippyError</span><span class="Other">,</span> <span class="Identifier">CatchableError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">forbids</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L817" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L817" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L832" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L832" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -693,8 +693,8 @@
   <dd>
     
     Make multiple HTTP requests in parallel. This proc blocks until all requests have either received a response or are unable to complete. The return value seq is in the same order as the request batch. Each request will have either a response or an error in the return seq. If <tt class="docutils literal"><span class="pre"><span class="Identifier">error</span> <span class="Operator">!=</span> <span class="StringLit">&quot;&quot;</span></span></tt> then something prevented the request from completing. This may be a timeout, DNS error, connection interruption, etc. The error string provides more information.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L540" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L540" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L555" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L555" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -707,8 +707,8 @@
   <dd>
     
     Creates a new thead-safe pool of libcurl handles.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L792" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L792" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L807" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L807" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -721,8 +721,8 @@
   <dd>
     
     Creates a new Curly instance that will run up to <tt class="docutils literal"><span class="pre"><span class="Identifier">maxInFlight</span></span></tt> HTTP requests in parallel.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L360" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L360" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L375" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L375" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -734,8 +734,8 @@
   <dd>
     
     Returns the number of requests currently in-flight.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L405" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L405" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L420" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L420" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -750,8 +750,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L638" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L638" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L653" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L653" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -763,8 +763,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L497" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L497" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L512" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L512" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -776,8 +776,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L966" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L966" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L986" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L986" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -789,8 +789,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L1020" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L1020" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L1040" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L1040" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -803,8 +803,8 @@
   <dd>
     
     Returns a response to an HTTP request started by either <tt class="docutils literal"><span class="pre"><span class="Identifier">startRequest</span></span></tt> or <tt class="docutils literal"><span class="pre"><span class="Identifier">startRequests</span></span></tt> if one is available. Responses returned by this proc are in the order the responses are received, NOT in the order the requests were started.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L738" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L738" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L753" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L753" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -819,8 +819,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L620" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L620" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L635" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L635" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -832,8 +832,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L479" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L479" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L494" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L494" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -844,8 +844,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L948" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L948" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L968" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L968" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -856,8 +856,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L1000" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L1000" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L1020" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L1020" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -871,8 +871,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L629" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L629" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L644" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L644" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -884,8 +884,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L488" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L488" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L503" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L503" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -896,8 +896,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L957" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L957" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L977" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L977" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -908,8 +908,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L1010" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L1010" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L1030" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L1030" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -921,8 +921,8 @@
   <dd>
     
     Returns the number of queued requests.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L410" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L410" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L425" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L425" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -935,8 +935,8 @@
   <dd>
     
     Returns a libcurl handle to the pool.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L785" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L785" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L800" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L800" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -951,8 +951,8 @@
   <dd>
     
     Starts an HTTP request. These requests are run in parallel. This proc does not block waiting for a response. NOTE: When the request completes, a response is stored until it is removed by a call to <tt class="docutils literal"><span class="pre"><span class="Identifier">waitForResponse</span></span></tt>. If the responses are never removed, they will accumulate in memory.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L699" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L699" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L714" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L714" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -965,8 +965,8 @@
   <dd>
     
     Starts one or more HTTP requests. These requests are run in parallel. This proc does not block waiting for responses. NOTE: When each request completes, a response is stored until it is removed by a call to <tt class="docutils literal"><span class="pre"><span class="Identifier">waitForResponse</span></span></tt> or <tt class="docutils literal"><span class="pre"><span class="Identifier">pollForResponse</span></span></tt>. If the responses are never removed, they will accumulate in memory.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L663" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L663" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L678" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L678" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -979,8 +979,8 @@
   <dd>
     
     Blocks waiting for a response to an HTTP request started by either <tt class="docutils literal"><span class="pre"><span class="Identifier">startRequest</span></span></tt> or <tt class="docutils literal"><span class="pre"><span class="Identifier">startRequests</span></span></tt>. Responses returned by this proc are in the order the responses are received, NOT in the order the requests were started.
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L717" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L717" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L732" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L732" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -998,8 +998,8 @@
   <dd>
     
     
-    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L809" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
-<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L809" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
+    <a href="https://github.com/monofuel/curly/tree/master/src/curly.nim#L824" class="link-seesrc" target="_blank">Source</a>&nbsp;&nbsp;
+<a href="https://github.com/monofuel/curly/edit/devel/src/curly.nim#L824" class="link-seesrc" target="_blank" >Edit</a>&nbsp;&nbsp;
 
   </dd>
 </div>
@@ -1015,7 +1015,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-09-25 17:50:50 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-10-01 18:38:05 UTC</small>
       </div>
     </div>
   </div>
